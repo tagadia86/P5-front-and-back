@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="bg-light">
+        <div class="container">
+          <div class="row">
+            <nav class="col navbar navbar-expand-lg navbar-dark">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo_orinoco.png" width="100" height="50" alt="Info Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container" id="main_block">
+        <div class="container"><strong>Nous vous remercions d'avoir passé votre commande chez Orinoco. </strong></div><br>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    Date : 
+                    <span id="today_date"></span> 
+                    <span class="float-right"> Statut : validée</span>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                        <h6 class="mb-3">Émis par:</h6>
+                        <div>
+                        <strong>Orinoco</strong>
+                        </div>
+                        <div>7 rue Lafayette, Paris</div>
+                        <div>Email: contact@orinoco.com</div>
+                        <div>Phone: +33 86 76 89 074</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive-sm">
+                        <table class="table table-striped">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">1</td>
+                                    <td class="left strong">Numéro de commande</td>
+                                    <td class="left"></td>
+                                    <td class="right"></td>
+                                    <td class="center"></td>
+                                    <td class="left strong" id="order_id"></td>
+                                </tr>
+                                <tr>
+                                    <td class="center">2</td>
+                                    <td class="left">Montant de la commande</td>
+                                    <td class="left"></td>
+                                    <td class="right"></td>
+                                    <td class="center"></td>
+                                    <td class="right" id="total">dol</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+          </div>
+        </div> 
+    </main>
+   <script type="text/javascript" src="orderID.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

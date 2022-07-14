@@ -1,0 +1,12 @@
+let urlSearch1 = new URLSearchParams(window.location.search);
+let confirmationNumber = urlSearch1.get('id');
+document.getElementById("order_id").innerHTML = confirmationNumber;
+let urlSearch2 = new URLSearchParams(window.location.search);
+let total = urlSearch2.get('tot');
+document.getElementById("total").innerHTML = (total/100) +"€";
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+today = mm + '/' + dd + '/' + yyyy;
+document.getElementById("today_date").innerHTML = today;
